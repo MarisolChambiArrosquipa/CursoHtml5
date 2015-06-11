@@ -40,9 +40,19 @@ span {
 }
 .ola-celeste {
 background:url("../img/wave-01.png");
+animation-name:ola;
+animation-duration:10s;
+animation-iteration-count:infinite;
+animation-timing-function:linear;
+animation-direction:alternate;
 }
 .ola-azul {
-background:url("../img/wave-02.png")
+background:url("../img/wave-02.png");
+animation-name:ola;
+animation-duration:5s;
+animation-iteration-count:infinite;
+animation-timing-function:linear;
+animation-direction:alternate;
 }
 .ola {
 width:100%;
@@ -70,5 +80,35 @@ position:absolute;
 left:0px;
 top:0px;
 width:100%;
+
+}
+
+@keyframes ola
+{
+    0%{
+        background-position-x:0px;
+        background-position-y:0px;
+    }
+    20%{
+        background-position-x:100px;
+        background-position-y:30px;
+    }
+    40%{
+        background-position-x:200px;
+        background-position-y:0px;
+    }
+    60%{
+        background-position-x:100px;
+        background-position-y:30px;
+    }
+    80%{
+        background-position-x:200px;
+        background-position-y:0px;
+    }
+
+    100%{
+        background-position-x:-150px;
+        background-position-y:20px;
+    }
 
 }
