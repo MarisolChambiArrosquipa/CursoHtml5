@@ -39,7 +39,7 @@ span {
     top:-25px;
 }
 .ola-celeste {
-background:url("../img/wave-01.png");
+background:url("../img/wave-01.png") repeat-x;
 animation-name:ola;
 animation-duration:10s;
 animation-iteration-count:infinite;
@@ -47,7 +47,7 @@ animation-timing-function:linear;
 animation-direction:alternate;
 }
 .ola-azul {
-background:url("../img/wave-02.png");
+background:url("../img/wave-02.png") repeat-x;
 animation-name:ola;
 animation-duration:5s;
 animation-iteration-count:infinite;
@@ -62,12 +62,18 @@ bottom:0;
 left:0;
 }
 #bote {
-background:url("../img/dream-boat.png");
+background:url("../img/dream-boat.png") no-repeat;
 height:310px;
 width:310px;
 position:absolute;
 bottom:0px;
 right:0px;
+animation-name:bote;
+animation-duration:10s;
+animation-iteration-count:infinite;
+animation-timing-function:ease;
+animation-direction:alternate;
+
 }
 .oceano {
 position:relative;
@@ -83,8 +89,7 @@ width:100%;
 
 }
 
-@keyframes ola
-{
+@keyframes ola{
     0%{
         background-position-x:0px;
         background-position-y:0px;
@@ -111,4 +116,18 @@ width:100%;
         background-position-y:20px;
     }
 
+}
+@keyframes bote{
+    form{
+        bottom:50px;
+        right: 80px;
+    }
+    50%{
+    bottom: 30px;
+    right: 60px;
+    }
+    to{
+        botton:10px;
+        right: 100px;
+    }
 }
