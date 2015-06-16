@@ -144,7 +144,7 @@ top: 0px;
 left: 0px;
 background-color: rgba(255,255,255,0.75);
 width: 100%;
-height: 100%;
+height: 0%;
 overflow: hidden;
 }
 #mensajeFinal article{
@@ -168,4 +168,20 @@ article{
 }
 #mensajeFinal section.cerrado{
    display: none; 
+}
+input[type='email'],input[type='text']
+{
+    width: 150px;
+    height: 30px;
+}
+.principal{
+
+    position: absolute;
+    top:60%;
+}
+.principal button{
+    font-size: 30px;
+}
+.palabraJugador div{
+    display: inline;
 }
